@@ -1,0 +1,72 @@
+.novidades__caixa {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-branco);
+    padding: 1.5em 1em;
+    row-gap: 1em;
+    
+}
+
+.novidades__titulo {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--azul);
+}
+
+.novidades__descricao {
+    font-weight: 300;
+    color: var(--azul)
+}
+
+.novidades__cadastro-email {
+    border: 1px solid var(--azul);
+    border-radius: 1.5em;
+    padding: 0.7em 0;
+}
+
+.novidades__cadastro-email::placeholder {
+    font-weight: 400;
+    color: var(--azul);
+    text-align: center;
+    background-image: url("../img/Email.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 7em;
+}
+
+.novidades__titulo {
+    margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+    .novidades__caixa {
+        flex-direction: row;
+        justify-content: center;
+        padding: 2em 0;
+        align-items: center;
+    }
+
+    .novidades__titulo {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .novidades__descricao {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .novidades__cadastro-email {
+        height: 2.5em;
+        padding: 0 4em;
+        margin-left: 2em;
+    }
+
+    .novidades__cadastro-email::placeholder {
+        font-weight: 400;
+        color: var(--azul);
+        text-align: center;
+        background-position-x: 0em;
+    }
+
+}
